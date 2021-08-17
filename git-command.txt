@@ -1,0 +1,30 @@
+[Git 초기화와 로컬 저장소]
+git init
+
+
+[첫 번째 버전 만들기]
+git config --global user.name "seungtae0"
+
+git config --global user.email eumc95@naver.com
+
+git add document.txt
+
+git commit -m "메세지를 달아 커밋으로 만들기"
+
+git log
+
+[만든 버전 GitHub에 올리기]
+ -- 로컬 저장소에 원격 저장소 주소 알려주기
+(github.com 에서 해당 repository 주소를 복사하여 입력)
+git remote add origin https://github.com/seungtae0/Git-Tutorial
+
+ -- 만든 커밋 푸시
+ git push origin master
+
+ [다른 사람이 만든 저장소 받아오기]
+ -- 새 폴더에서 명령어를 입력
+ -- 뒤에 점을 붙이지 않으면 해당 폴더명으로 하위 폴더가 생김
+ https://github.com/seungtae0/Git-Tutorial .
+
+ --새로 올린 커밋들 가져오기
+ git pull origin master
